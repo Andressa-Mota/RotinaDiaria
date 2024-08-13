@@ -247,6 +247,30 @@ h2 {
   padding-left: 100px;
   width: 50vw;
 }
+#gel-e-argila{
+    align-items: center;
+    padding: 70px 90px;
+    background: linear-gradient(287deg, #ffff 38%, #ccc2b4 88%);
+    display: flex;
+    gap: 145px;
+} 
+
+.img-gel-argila{
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    gap: 130px;
+}
+.texts-container{
+    display: flex;
+    flex-direction: column;  
+}
+.texts{
+    font-size: 22px;
+}
+.img-gel-argila-content{
+    height: 322px;
+}
 @media screen and (max-width: 900px) {
   nav {
     height: 10.5vh;
@@ -478,4 +502,35 @@ h2 {
     height: 20vh;
     border-radius: 30px;
   }
+
+  #gel-e-argila {
+    align-items: center;
+    padding: 40px 15px;
+    background: linear-gradient(287deg, #ffff 38%, #ccc2b4 88%);
+    display: flex;
+    gap:0;
+}
+
+.img-gel-argila {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px; /* Reduzido para telas menores */
+    gap:58px;
+}
+
+.texts-container {
+    display: flex;
+    flex-direction: column;  
+    gap: 10px;
+    position: relative;
+        top: 27px;
+}
+
+.texts {
+    font-size: 16px; 
+}
+
+.img-gel-argila-content {
+    height: 177px;
+}
 }
