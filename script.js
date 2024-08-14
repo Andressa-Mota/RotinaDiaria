@@ -6,6 +6,8 @@ function addResponsiveContent() {
             // Cria o novo elemento HTML
             const mobileContent = document.createElement('div');
             mobileContent.id = 'mobile-content';
+            
+            
             mobileContent.innerHTML = `
               <span class="menu-btn" onclick="openNav()">&#9776; </span>
 
@@ -16,12 +18,13 @@ function addResponsiveContent() {
                     <a href="#diferencial">Diferencial</a>
                     <a href="#sabonete">Sabonete</a>
                     <a href="#gel-e-argila">Gel e Argila</a>
-                    <a href="#contatos">Contatos</a>
+                    <a href="#contato">Contato</a>
                 </div>`;
             // Adiciona o novo conteúdo ao final do elemento com id "content"
             document.getElementById('content').appendChild(mobileContent);
         }
     }
+    
 }
 
 // Chama a função ao carregar a página
@@ -31,11 +34,11 @@ addResponsiveContent();
 window.addEventListener('resize', addResponsiveContent);
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
-    document.querySelector("main").style.marginLeft = "250px";
 }
 
 // Função para fechar o menu
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-    document.querySelector("main").style.marginLeft = "0";
+    
+
 }

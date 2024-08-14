@@ -10,6 +10,9 @@ body {
   width: 100%;
   box-sizing: border-box;
 }
+#mobile-content{
+    display: none;
+  }
 
 nav {
   gap: 80px;
@@ -42,7 +45,6 @@ nav a:hover {
 }
 #esfoliante {
   width: 100vw;
-  /* height: 100vh;  */
   padding: 20px;
   box-sizing: border-box;
   background: linear-gradient(227deg, #ccc2b4 0%, #ffff 62%);
@@ -279,16 +281,72 @@ h2 {
     gap: 15;
     flex-direction: column;
 }
-
+#contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(112deg, #ccc2b4 0%, #ffff 62%);
+}
+.text-title{
+    text-align: center;
+}
+.title-contato{
+    font-family: 'roboto',sans-serif;
+    font-weight: 600;
+}
+.p-title{
+    font-size: 3vw;
+    margin:1vw
+}
+.destaque-contato{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    background-color: var(--cor-destaque);
+    width: 100vw;
+}
+.bemvindo{
+    padding-top: 3vh;
+}
+.text-bemvindo{
+    font-size: 2vw;
+    font-weight: bold;
+}
+.container-contatos{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+.logo-escola{
+    width: 14vw;
+    height: auto;
+}
+h3{
+    font-weight: bolder;
+}
+footer{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 3vw;
+    color: #ffff;
+    background-color: #ccc2b4;
+    font-size: 1rem;
+}
 @media screen and (max-width: 900px) {
   nav {
     height: 10.5vh;
   }
 
-  nav a {
-    font-size: 0;
-    padding: 0;
+  #mobile-content{
+    display: block;
   }
+
+  nav a {
+    display:  none;
+  }
+  
 
   .img-logo {
     height: 120px;
@@ -498,7 +556,7 @@ h2 {
     width: 50%;
   }
   .img-destaque2 {
-    top: 120px;
+    top: 130px;
     position: relative;
     height: 40%;
     width: 50%;
@@ -518,7 +576,7 @@ h2 {
     background: linear-gradient(287deg, #ffff 38%, #ccc2b4 88%);
     display: flex;
     gap:0;
-    overflow-x: hidden;
+    /* width: 100vw; */
 }
 
 .img-gel-argila {
@@ -546,4 +604,32 @@ h2 {
     display: flex;
     flex-direction: column;
 }
+.qrcode{
+    width: 50vw;
 }
+.bemvindo{
+    padding-top: 3vw;
+}
+.text-bemvindo{
+    padding-top: 0;
+    padding-bottom: 2vw;
+}
+.container-contatos{
+    align-items: center;
+}
+.logo-escola{
+   width: 14vw;
+    height: 14vw;
+}
+h3{
+    font-size:small;
+}
+h5{
+    font-size: xx-small;
+}
+footer{
+    font-size:1vw
+}
+
+}
+
