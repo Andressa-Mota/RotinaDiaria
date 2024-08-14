@@ -1,6 +1,6 @@
 function addResponsiveContent() {
     // Verifica se a largura da janela é de até 395px
-    if (window.innerWidth <= 890) {
+    if (window.innerWidth <= 900) {
         // Verifica se o conteúdo já foi adicionado para evitar duplicações
         if (!document.getElementById('mobile-content')) {
             // Cria o novo elemento HTML

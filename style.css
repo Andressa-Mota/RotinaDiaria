@@ -264,6 +264,8 @@ h2 {
 .texts-container{
     display: flex;
     flex-direction: column;  
+    gap: 15vw;
+    padding-top: 72px;
 }
 .texts{
     font-size: 22px;
@@ -271,6 +273,13 @@ h2 {
 .img-gel-argila-content{
     height: 322px;
 }
+.gelEargila-texts{
+    gap: 63px;
+    display: flex;
+    gap: 15;
+    flex-direction: column;
+}
+
 @media screen and (max-width: 900px) {
   nav {
     height: 10.5vh;
@@ -489,7 +498,7 @@ h2 {
     width: 50%;
   }
   .img-destaque2 {
-    top: 171px;
+    top: 120px;
     position: relative;
     height: 40%;
     width: 50%;
@@ -505,7 +514,7 @@ h2 {
 
   #gel-e-argila {
     align-items: center;
-    padding: 40px 15px;
+    padding: 0 20px 40px 20px;
     background: linear-gradient(287deg, #ffff 38%, #ccc2b4 88%);
     display: flex;
     gap:0;
@@ -514,16 +523,13 @@ h2 {
 .img-gel-argila {
     display: flex;
     flex-direction: column;
-    padding-top: 50px; /* Reduzido para telas menores */
-    gap:58px;
+    padding-top: 70px;
+    gap: 152px;
 }
 
 .texts-container {
     display: flex;
     flex-direction: column;  
-    gap: 10px;
-    position: relative;
-        top: 27px;
 }
 
 .texts {
@@ -531,6 +537,11 @@ h2 {
 }
 
 .img-gel-argila-content {
-    height: 177px;
+    height: 154px;
+}
+.gelEargila-texts{
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
 }
 }
