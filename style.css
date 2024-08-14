@@ -518,22 +518,24 @@ h2 {
     background: linear-gradient(287deg, #ffff 38%, #ccc2b4 88%);
     display: flex;
     gap:0;
+    overflow-x: hidden;
 }
 
 .img-gel-argila {
     display: flex;
     flex-direction: column;
     padding-top: 70px;
-    gap: 152px;
+    gap: 110px;
 }
 
 .texts-container {
     display: flex;
     flex-direction: column;  
+    gap: 77px;
 }
 
 .texts {
-    font-size: 16px; 
+    font-size: 12px; 
 }
 
 .img-gel-argila-content {
